@@ -15,7 +15,7 @@ body {
     background-color: var(--bg);
     color: var(--text-main);
     line-height: 1.6;
-    overflow-x: hidden; /* يمنع ظهور شريط تمرير أفقي للموقع ككل */
+    overflow-x: hidden; 
 }
 
 header {
@@ -77,10 +77,10 @@ main { max-width: 1100px; margin: 40px auto; padding: 0 20px; }
 .field { display: flex; flex-direction: column; gap: 5px; margin-bottom: 15px; }
 input { padding: 12px; border: 1px solid var(--border); border-radius: 6px; font-size: 1rem; }
 
-/* معالجة الجداول للموبايل */
+
 .table-container {
     width: 100%;
-    overflow-x: auto; /* يسمح بالتمرير الأفقي للجدول فقط */
+    overflow-x: auto; 
     -webkit-overflow-scrolling: touch;
 }
 
@@ -117,7 +117,7 @@ footer { text-align: center; padding: 40px; color: var(--text-muted); font-size:
     main { margin: 20px auto; padding: 0 15px; }
 
     .hero-section {
-        flex-direction: column-reverse; /* الصورة فوق النص في الموبايل أجمل */
+        flex-direction: column-reverse; 
         text-align: center;
         gap: 25px;
     }
