@@ -17,7 +17,6 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
 header {
     background: var(--primary-gradient);
     padding: 15px 50px; 
@@ -45,7 +44,6 @@ nav a {
 }
 nav a:hover, nav a.active { color: #ffffff; background: rgba(255, 255, 255, 0.2); }
 
-/* Main Container */
 main { max-width: 1100px; margin: 40px auto; padding: 0 20px; }
 
 .card {
@@ -56,78 +54,34 @@ main { max-width: 1100px; margin: 40px auto; padding: 0 20px; }
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
 
-/* Home Hero Section */
+/* Home Page Hero Section */
 .hero-section { display: flex; align-items: center; gap: 40px; }
-.hero-content { flex: 1.2; }
-.hero-content h2 { font-size: 2.5rem; margin-bottom: 20px; color: var(--text-main); }
+.hero-content { flex: 1; }
+.hero-content h2 { font-size: 2.5rem; margin-bottom: 20px; }
 .hero-image { flex: 1; text-align: center; }
 .hero-image img { width: 100%; max-width: 500px; border-radius: 12px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
 
 /* Buttons */
 .btn-primary {
     background: var(--primary-gradient);
-    color: white; border: none; padding: 14px 28px;
-    border-radius: 8px; font-weight: 700; cursor: pointer;
+    color: white; border: none; padding: 12px 25px;
+    border-radius: 6px; font-weight: 700; cursor: pointer;
     text-decoration: none; display: inline-block;
-    transition: transform 0.2s;
 }
-.btn-primary:hover { transform: translateY(-2px); }
 
-/* Footer */
-footer { 
-    text-align: center; 
-    padding: 40px 20px; 
-    color: var(--text-muted); 
-    font-size: 0.9rem; 
-    border-top: 1px solid var(--border);
-    margin-top: 50px;
-}
-footer strong { color: var(--primary-color); }
+/* Forms & Tables */
+.field { display: flex; flex-direction: column; gap: 5px; margin-bottom: 15px; }
+input { padding: 10px; border: 1px solid var(--border); border-radius: 6px; }
+table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+th { text-align: left; padding: 12px; background: #f1f5f9; color: var(--text-muted); }
+td { padding: 12px; border-bottom: 1px solid var(--border); }
 
+.centered-container { display: flex; justify-content: center; align-items: center; min-height: 70vh; }
+.add-course-card { width: 100%; max-width: 500px; }
+
+footer { text-align: center; padding: 40px; color: var(--text-muted); font-size: 0.9rem; }
 
 @media (max-width: 768px) {
-    header {
-        flex-direction: column; 
-        padding: 15px 20px;
-        text-align: center;
-    }
-
-    nav {
-        margin-top: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    nav a {
-        padding: 6px 10px;
-        font-size: 0.85rem;
-    }
-
-    .hero-section {
-        flex-direction: column; 
-        text-align: center;
-        gap: 30px;
-    }
-
-    .hero-content h2 {
-        font-size: 1.8rem; 
-    }
-
-    .hero-content p {
-        font-size: 1rem;
-    }
-
-    main {
-        margin: 20px auto;
-    }
-
-    .card {
-        padding: 25px 20px;
-    }
-
-  
-    table {
-        display: block;
-        overflow-x: auto; 
-    }
+    .hero-section { flex-direction: column; text-align: center; }
+    header { padding: 15px 20px; flex-direction: column; gap: 10px; }
 }
